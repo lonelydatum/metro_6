@@ -59,7 +59,7 @@ function start(){
 
 	// tl.from(".hero_a", .6, {opacity:.8}, 0)
 
-	tl.add("f2", 3.5)
+	tl.add("f2", 4)
 	tl.to(".frame1", .3, {opacity:0}, "f2")
 	tl.set(".frame2", {opacity:1}, "f2")
 
