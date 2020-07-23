@@ -1,0 +1,54 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+.catcher{
+	// @include pos-scale(-61, 0, 0.7);
+}
+.ball{
+	@include pos-scale(-7, 8, 0.5);
+}
+
+.hero_batter_9{
+	@include pos-scale(-150, -125, .5);
+}
+
+.batter_all {
+	@include pos-scaleXY(-94, -117, -0.47, 0.47);
+	width:300px;
+	height:250px;
+	// background-color: red;
+	.batter{
+		opacity: 0;
+	}
+}
+
+.illust{
+	transform-origin: 35% 100%;
+}
+
+#legalBtn{	
+	top: 50px;
+	left: 7px;
+	position: absolute;
+	// opacity: 1;
+}
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 320px;
+	height: 50px;
+}
+
+
+// #legalBtn{	
+// 	// @include pos(7, 198);
+// }
