@@ -64,15 +64,10 @@ function start() {
 
 	elements(list);
 
-	// TweenLite.from([".ball"], 1, {x:"-=20", ease:Power2.easeOut})
+	tl.from(".t1_a", .01, { opacity: 0 }, "+=.8");
+	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.7");
 
-	// batter({ball:"-=30", bat:"+=5"})
-	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
-	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.4");
-
-	// // tl.from(".hero_a", .6, {opacity:.8}, 0)
-
-	tl.add("f2", 2);
+	tl.add("f2", 3.3);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");
 	tl.set(".frame2", { opacity: 1 }, "f2");
 
