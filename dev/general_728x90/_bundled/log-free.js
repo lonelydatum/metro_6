@@ -26,7 +26,7 @@ function a_(list, x) {
 	var tl = new TimelineMax();
 
 	list.map(function (item, index) {
-		tl.from(item, index * .08 + .1, { x: x, y: "+=" + (0, _commonJsCommonJs.rand)(0, 30), ease: Power3.easeOut }, 0.3);
+		tl.from(item, index * .15 + .1, { x: x, y: "+=" + (0, _commonJsCommonJs.rand)(0, 30), ease: Power3.easeOut }, 0.3);
 	});
 }
 
@@ -44,12 +44,12 @@ function start() {
 	a_(a, -120);
 	a_(b, 120);
 
-	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
-	tl.from(".t1_b", .01, { opacity: 0 }, "+=.4");
+	tl.from(".t1_a", .01, { opacity: 0 }, .5);
+	tl.from(".t1_b", .01, { opacity: 0 }, 2);
 
 	// tl.from(".hero_a", .6, {opacity:.8}, 0)
 
-	tl.add("f2", 2);
+	tl.add("f2", 3.5);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");
 	tl.set(".frame2", { opacity: 1 }, "f2");
 

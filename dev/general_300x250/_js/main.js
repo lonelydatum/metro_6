@@ -7,7 +7,7 @@ import {rand} from '../../_common/js/common.js'
 function elements(list){
 	const tl = new TimelineMax()
 
-	tl.from(".all", .8,  {x:-250, opacity:.2}, 0)
+	tl.from(".a_0", .8,  {x:-250, opacity:.2}, 0)
 	list.map((item, index)=>{
 				
 		tl.from(item, (index*.08)+.1,  { x:-190, y:`+=${rand(20, 40)}`, ease:Power3.easeOut}, 0.3)
@@ -21,16 +21,16 @@ function start(){
 	tl.set(".frame1", {opacity:1})
 
 	const list = [
-		".helmet_fb",
-		".soccer",
-		".net",		
-		".basketball",
-		".skate",
-		".bat",
-		".helmat_bb",
+		".a_1",
+		".a_2",
+		".a_3",		
+		".a_4",
+		".a_5",
+		".a_6",
+		".a_7",
 		
-		".cleats",
-		".glove",		
+		".a_8",
+		".a_9",		
 		
 	]
 

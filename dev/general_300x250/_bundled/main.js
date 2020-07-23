@@ -25,7 +25,7 @@ var _commonJsCommonJs = require('../../_common/js/common.js');
 function elements(list) {
 	var tl = new TimelineMax();
 
-	tl.from(".all", .8, { x: -250, opacity: .2 }, 0);
+	tl.from(".a_0", .8, { x: -250, opacity: .2 }, 0);
 	list.map(function (item, index) {
 
 		tl.from(item, index * .08 + .1, { x: -190, y: "+=" + (0, _commonJsCommonJs.rand)(20, 40), ease: Power3.easeOut }, 0.3);
@@ -37,7 +37,7 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	var list = [".helmet_fb", ".soccer", ".net", ".basketball", ".skate", ".bat", ".helmat_bb", ".cleats", ".glove"];
+	var list = [".a_1", ".a_2", ".a_3", ".a_4", ".a_5", ".a_6", ".a_7", ".a_8", ".a_9"];
 
 	elements(list);
 
