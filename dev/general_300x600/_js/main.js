@@ -10,7 +10,7 @@ function elements(list){
 	tl.from(".a_0", .8,  {y:+250, opacity:.2}, 0)
 	list.map((item, index)=>{
 				
-		tl.from(item, (index*.1)+.1,  { y:"+=290", x:rand(-60, 60), ease:Power3.easeOut}, 0.3)
+		tl.from(item, (index*.1)+.1,  { y:"+=290", x:rand(-100, 100), ease:Power3.easeOut}, 0.3)
 		
 	})
 }
@@ -45,7 +45,7 @@ function start(){
 	tl.from([".t1_b", ".t1_c"], .01, {opacity:0}, .8)
 
 
-	tl.add("f2", 2)
+	tl.add("f2", 2.7)
 	tl.to(".frame1", .3, {opacity:0}, "f2")
 	tl.set(".frame2", {opacity:1}, "f2")
 
