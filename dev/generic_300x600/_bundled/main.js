@@ -38,7 +38,7 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	var list = [".a_1", ".a_2", ".a_3", ".a_4", ".a_5", ".a_6", ".a_7", ".a_8", ".a_9", ".a_10"];
+	var list = [".a_1", ".a_2", ".a_3", ".a_4", ".a_5", ".a_6", ".a_7", ".a_8", ".a_9"];
 
 	elements(list);
 
