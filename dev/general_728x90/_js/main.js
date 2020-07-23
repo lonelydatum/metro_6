@@ -52,7 +52,9 @@ function start(){
 	
 
 	tl.from(".t1_a", .01, {opacity:0}, .1)
-	tl.from(".t1_b", .01, {opacity:0}, 1.2)
+	tl.from(".t1_b", .01, {opacity:0}, .5)
+	tl.from(".t1_c", .01, {opacity:0}, 1)
+	tl.from(".t1_d", .01, {opacity:0}, 1.5)
 	tl.from(".logo", .01, {opacity:0}, 2)
 	
 	

@@ -45,7 +45,9 @@ function start() {
 	a_(b, 120);
 
 	tl.from(".t1_a", .01, { opacity: 0 }, .1);
-	tl.from(".t1_b", .01, { opacity: 0 }, 1.2);
+	tl.from(".t1_b", .01, { opacity: 0 }, .5);
+	tl.from(".t1_c", .01, { opacity: 0 }, 1);
+	tl.from(".t1_d", .01, { opacity: 0 }, 1.5);
 	tl.from(".logo", .01, { opacity: 0 }, 2);
 
 	// tl.from(".hero_a", .6, {opacity:.8}, 0)
