@@ -1,10 +1,7 @@
 
-import {batter} from '../../_common/js/common.js'
+import {rand} from '../../_common/js/common.js'
 
-function rand(min, max){
-	const diff = max-min
-	return (Math.random()*diff) + min
-}
+
 
 
 function elements(list){

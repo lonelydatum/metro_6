@@ -22,34 +22,39 @@ exports.rand = rand;
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-function elements(list) {
+function a_(list, x) {
 	var tl = new TimelineMax();
 
-	tl.from(".all", .8, { x: -250, opacity: .2 }, 0);
 	list.map(function (item, index) {
-
-		tl.from(item, index * .08 + .1, { x: -190, y: "+=" + (0, _commonJsCommonJs.rand)(20, 40), ease: Power3.easeOut }, 0.3);
+		tl.from(item, index * .08 + .1, { x: x, y: "+=" + (0, _commonJsCommonJs.rand)(0, 30), ease: Power3.easeOut }, 0.3);
 	});
 }
 
 function start() {
 	TweenLite.defaultEase = Power3.easeInOut;
 	var tl = new TimelineMax();
+
 	tl.set(".frame1", { opacity: 1 });
 
-	var list = [".helmet_fb", ".soccer", ".net", ".basketball", ".skate", ".bat", ".helmat_bb", ".cleats", ".glove"];
+	tl.from(".a_0", .8, { x: -100, opacity: .2 }, 0);
+	tl.from(".b_0", .8, { x: +100, opacity: .2 }, 0);
+	var a = [".a_3", ".a_4", ".a_5", ".a_6", ".a_1", ".a_2"];
 
-	elements(list);
+	var b = [".b_1", ".b_2", ".b_3", ".b_4", ".b_5", ".b_6", ".b_7", ".b_8"];
+	a_(a, -120);
+	a_(b, 120);
 
-	tl.from(".t1_a", .01, { opacity: 0 }, "+=.8");
-	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.7");
+	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
+	tl.from(".t1_b", .01, { opacity: 0 }, "+=.4");
 
-	tl.add("f2", 3.3);
+	// tl.from(".hero_a", .6, {opacity:.8}, 0)
+
+	tl.add("f2", 2);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");
 	tl.set(".frame2", { opacity: 1 }, "f2");
 
 	tl.add("phone_move");
-	tl.from('.phone', .4, { y: "+=100", ease: Power3.easeOut }, "phone_move");
+	tl.from('.phone', .3, { y: "+=100", ease: Power3.easeOut }, "phone_move");
 	tl.from('.illust', .3, { scale: 0 }, "phone_move+=.3");
 
 	tl.from(['.t2', '.legal'], .01, { opacity: 0 }, "+=.3");
@@ -61,8 +66,6 @@ function start() {
 
 	// tl.gotoAndPlay("f2")
 }
-
-// batter()
 
 start();
 
