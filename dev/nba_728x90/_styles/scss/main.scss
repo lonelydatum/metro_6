@@ -1,0 +1,34 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+.illust{
+	transform-origin: 175px 90px;
+}
+
+#legalBtn{	
+	top: 50px;
+	left: 7px;
+	position: absolute;
+	// opacity: 1;
+}
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 728px;
+	height: 90px;
+}
+
+
+// #legalBtn{	
+// 	// @include pos(7, 198);
+// }
