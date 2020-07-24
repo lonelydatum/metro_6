@@ -30,7 +30,7 @@ function start(){
 
 	tl.from(['.t2', '.legal'], .01, {opacity:0}, "+=.3")
 	tl.from('.cta', .1, {opacity:0}, "+=1.4")
-	tl.to('.cta', .2, {opacity:0}, "+=2.3")
+	tl.to('.cta', .2, {opacity:0}, "+=2.6")
 	tl.from('.cta2', .3, {opacity:0})
 	
 
