@@ -22,34 +22,16 @@ exports.rand = rand;
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-function a_(list, x) {
-	var tl = new TimelineMax();
-
-	list.map(function (item, index) {
-		tl.from(item, index * .05 + .2, { x: x, y: "+=" + (0, _commonJsCommonJs.rand)(0, 30), ease: Power3.easeOut }, 0.3);
-	});
-}
-
 function start() {
 	TweenLite.defaultEase = Power3.easeInOut;
 	var tl = new TimelineMax();
-
 	tl.set(".frame1", { opacity: 1 });
 
-	TweenLite.from(".a_0", .8, { x: -100, opacity: 0 });
-	TweenLite.from(".b_0", .8, { x: +100, opacity: 0 });
+	TweenLite.from(".player_shooter", 1.7, { x: "+=10", y: "+=3", ease: Power2.easeOut });
+	TweenLite.from(".player_defender", 1.8, { x: "-=12", ease: Power3.easeOut });
 
-	var a = [".a_3", ".a_4", ".a_5", ".a_6", ".a_1", ".a_2"];
-
-	var b = [".b_1", ".b_2", ".b_3", ".b_4", ".b_5", ".b_6", ".b_7", ".b_8"];
-	a_(a, -80);
-	a_(b, 80);
-
-	tl.from(".t1_a", .01, { opacity: 0 }, .1);
+	tl.from(".t1_a", .01, { opacity: 0 }, "+=.2");
 	tl.from(".t1_b", .01, { opacity: 0 }, "+=.5");
-	tl.from(".t1_c", .01, { opacity: 0 }, "+=.5");
-	tl.from([".t1_d"], .01, { opacity: 0 }, "+=.5");
-	tl.from([".logo"], .01, { opacity: 0 }, "+=.4");
 
 	tl.add("f2", 4);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");
