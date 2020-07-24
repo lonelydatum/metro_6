@@ -36,8 +36,9 @@ function start() {
 
 	tl.set(".frame1", { opacity: 1 });
 
-	tl.from(".a_0", .8, { x: -100, opacity: .2 }, 0);
-	tl.from(".b_0", .8, { x: +100, opacity: .2 }, 0);
+	TweenLite.from(".a_0", .8, { x: -100, opacity: 0 });
+	TweenLite.from(".b_0", .8, { x: +100, opacity: 0 });
+
 	var a = [".a_3", ".a_4", ".a_5", ".a_6", ".a_1", ".a_2"];
 
 	var b = [".b_1", ".b_2", ".b_3", ".b_4", ".b_5", ".b_6", ".b_7", ".b_8"];
@@ -45,8 +46,10 @@ function start() {
 	a_(b, 80);
 
 	tl.from(".t1_a", .01, { opacity: 0 }, .1);
-	tl.from(".t1_b", .01, { opacity: 0 }, 1.2);
-	tl.from(".logo", .01, { opacity: 0 }, 2);
+	tl.from(".t1_b", .01, { opacity: 0 }, "+=.5");
+	tl.from(".t1_c", .01, { opacity: 0 }, "+=.5");
+	tl.from([".t1_d"], .01, { opacity: 0 }, "+=.5");
+	tl.from([".logo"], .01, { opacity: 0 }, "+=.4");
 
 	tl.add("f2", 4);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");

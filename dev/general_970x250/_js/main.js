@@ -21,8 +21,9 @@ function start(){
 
 	tl.set(".frame1", {opacity:1})
 
-	tl.from(".a_0", .8,  {x:-100, opacity:0}, 0)
-	tl.from(".b_0", .8,  {x:+100, opacity:0}, 0)
+	TweenLite.from(".a_0", .8,  {x:-100, opacity:0})
+	TweenLite.from(".b_0", .8,  {x:+100, opacity:0})
+	
 	const a = [		
 		".a_1",
 		".a_2",
@@ -33,8 +34,7 @@ function start(){
 	]
 
 
-	const b = [		
-		
+	const b = [				
 		".b_1",
 		".b_2",
 		".b_3",
@@ -51,8 +51,10 @@ function start(){
 
 
 	tl.from(".t1_a", .01, {opacity:0}, .1)
-	tl.from(".t1_b", .01, {opacity:0}, 1.2)
-	tl.from(".logo", .01, {opacity:0}, 2)
+	tl.from(".t1_b", .01, {opacity:0}, "+=.5")
+	tl.from(".t1_c", .01, {opacity:0}, "+=.5")
+	tl.from([".t1_d", ".logo"], .01, {opacity:0}, "+=.8")
+	
 	// tl.from(".t1_c", .01, {opacity:0}, "+=.3")
 	
 
