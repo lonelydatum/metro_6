@@ -27,7 +27,7 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	TweenLite.from(".player_defender", 1.7, { x: "-=7", y: "+=1", ease: Power2.easeOut });
+	// TweenLite.from(".player_defender", 1.7, {x:"-=7", y:"+=1", ease:Power2.easeOut})
 	TweenLite.from(".player_shooter", 1.7, { x: "+=35", y: "-=10", ease: Power2.easeOut });
 	TweenLite.from(".ball", 1.8, { x: "+=40", y: "-20", ease: Power3.easeOut });
 
