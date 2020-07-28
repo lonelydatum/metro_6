@@ -41,9 +41,10 @@ function start() {
 	TweenLite.from(".player_shooter", 1.7, { x: "+=25", y: "-=3", ease: Power2.easeOut });
 	TweenLite.from(".puck", 1, { x: "+=40", y: "-3", ease: Power3.easeOut });
 
-	tl.from(".t1_a", .01, { opacity: 0 }, "+=.2");
-	tl.to([".logo", ".t1_a"], .01, { opacity: 0 }, "+=2.2");
-	tl.from([".logo2", ".t1_b"], .01, { opacity: 0 });
+	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
+	tl.to([".t1_a"], .3, { opacity: 0 }, "+=2.2");
+	tl.to([".logo"], .5, { x: -128 }, "-=.2");
+	tl.from([".t1_b"], .3, { opacity: 0 });
 
 	var a = [".a4", ".a2", ".a1", ".a3"];
 
