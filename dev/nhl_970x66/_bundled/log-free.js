@@ -39,7 +39,7 @@ function start() {
 
 	TweenLite.from(".player_defender", 1.7, { x: "-=8", y: "+=1", ease: Power2.easeOut });
 	TweenLite.from(".player_shooter", 1.7, { x: "+=25", y: "-=10", ease: Power2.easeOut });
-	TweenLite.from(".puck", 1, { x: "+=40", y: "-20", ease: Power3.easeOut });
+	TweenLite.from(".puck", 1.3, { x: "+=50", y: "-10", ease: Power3.easeOut });
 
 	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
 	tl.to([".t1_a"], .3, { opacity: 0 }, "+=2.2");
