@@ -28,13 +28,6 @@ $property: transform;
     position: absolute;
 }
 
-@mixin pos-scaleXY($x, $y, $sx, $sy) {
-    @include prefix( translate($x + px, $y + px) scale($sx, $sy) );
-    backface-visibility: hidden;
-    perspective: 1000px;
-    position: absolute;
-}
-
 @mixin pos-scale-rotate($x, $y, $s, $r) {
   @include prefix( translate($x + px, $y + px) scale($s) rotate($r + deg) );
   backface-visibility: hidden;

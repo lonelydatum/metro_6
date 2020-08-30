@@ -37,7 +37,7 @@ canvas{
 	height: 250px;
 	overflow: hidden;
 	position: relative;
-	background-color: #01632F;
+	background-color: white;
 	-webkit-text-size-adjust: 100%;
 	opacity: 1;
 	cursor: pointer;
@@ -100,14 +100,6 @@ sup{
 
 .retina{
 	@include pos-scale(0, 0, .5);
-	transform-origin: 0 0 ;
-	image-rendering: -webkit-optimize-contrast;
-	
-}
-
-
-.retina4{
-	@include pos-scale(0, 0, .25);
 	transform-origin: 0 0 ;
 	image-rendering: -webkit-optimize-contrast;
 	
