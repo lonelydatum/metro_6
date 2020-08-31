@@ -3,7 +3,7 @@
 
 function start() {
 	TweenLite.defaultEase = Power2.easeOut;
-	var tl = new TimelineMax({ repeat: 2, repeatDelay: 2.5 });
+	var tl = new TimelineMax({ repeat: 1, repeatDelay: 2.5 });
 	tl.set(".frame1", { opacity: 1 });
 	tl.from(".t1", .5, { opacity: 0 }, "+=.2");
 

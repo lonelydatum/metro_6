@@ -1,6 +1,6 @@
 function start(){
 	TweenLite.defaultEase = Power2.easeOut
-	const tl = new TimelineMax({repeat:2, repeatDelay:2})
+	const tl = new TimelineMax({repeat:1, repeatDelay:2})
 	const read = "+=1"
 	const time = .5
 	tl.to(".frame1", .5, {opacity:1})
